@@ -132,7 +132,7 @@ class FirstRoute extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          child: const Text('Open route'),
+          child: const Text('Log in / Sign In'),
           onPressed: () {
             Navigator.push(
               context,
