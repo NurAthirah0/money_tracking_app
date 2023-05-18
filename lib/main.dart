@@ -39,7 +39,21 @@ class _LoginPageState extends State<LoginPage> {
         context,
         MaterialPageRoute(builder: (context) => DashboardPage()),
       );
-    } else {
+    }
+    else if void _login() {
+      String email = _emailController.text.trim();
+      String password = _passwordController.text.trim();
+
+      print('Entered email: $email');
+      print('Entered password: $password');
+
+      // Perform login validation and logic here
+      // Add debug statements or log messages to check the values being used for comparison
+
+      // Rest of the login logic...
+    }
+
+    else {
       showDialog(
         context: context,
         builder: (context) {
